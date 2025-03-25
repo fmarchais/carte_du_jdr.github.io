@@ -1,0 +1,55 @@
+---
+title: "Leaflet Map of Nantes"
+author: "fmarchais"
+date: "2025-03-25"
+format: html
+---
+
+```{r setup, include=FALSE}
+library(leaflet)
+library(dplyr)
+library(tidyverse)
+```
+
+# Carte de France du JDR
+
+```{r leaflet-map, echo=FALSE}
+# Centrer la carte sur Nantes
+nantes_coords <- c(47.2184, -1.5536)
+
+# Importer les données, passer lon et lat en char pour éviter notation scientifique
+df <- read_csv2("data_cdf_jdr.csv", 
+                col_types = cols(
+  lon = col_character(),
+  lat = col_character()))
+
+# attribuer une couleur à chaque point sur la carte selon son type
+df <- df %>%
+  mutate(color = case_when(
+    type == "Recurrent" ~ "red",
+    type == "Exceptionnel" ~ "darkgreen",
+    type == "Association" ~ "blue"
+  ),
+  lon = as.numeric(lon),
+  lat = as.numeric(lat))
+
+
+# Crééer la carte
+leaflet(df) %>%
+  addTiles() %>%
+  setView(lng = nantes_coords[2], lat = nantes_coords[1], zoom = 13) %>%
+  # Ajouter les marqueurs
+  addCircleMarkers(~lon, ~lat, 
+                   color = ~color, radius = 8, 
+                   label = ~ paste0(nom, ", ", freq),
+                   popup = ~ paste0("<b>","<a href='", 
+                                   lien, "' target='_blank'>", nom, "</a>" ,
+                                    "</b><br><img src='", image, "' width='200' height='150'>")) %>%
+  # Ajouter la légende
+  addLegend(position = "bottomright", 
+            colors = c("red", "darkgreen", "blue"),
+            labels = c("Evènements réguliers", "Evènements exceptionnels", "Associations"),
+            title = "Légende")
+```
+
+\`\`\`\`
