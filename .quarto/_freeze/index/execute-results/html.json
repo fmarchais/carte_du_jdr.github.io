@@ -1,0 +1,19 @@
+{
+  "hash": "99a2ecdc9284de91b395f1c040970826",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Leaflet Map of Nantes\"\nauthor: \"fmarchais\"\ndate: \"2025-03-25\"\nformat: html\n---\n\n\n\n\n\n# Carte de France du JDR\n\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stderr}\n\n```\nℹ Using \"','\" as decimal and \"'.'\" as grouping mark. Use `read_delim()` for more control.\n```\n\n\n:::\n\n::: {.cell-output-display}\n\n```{=html}\n<div class=\"leaflet html-widget html-fill-item\" id=\"htmlwidget-23331b53cf76aced3c46\" style=\"width:100%;height:464px;\"></div>\n<script type=\"application/json\" data-for=\"htmlwidget-23331b53cf76aced3c46\">{\"x\":{\"options\":{\"crs\":{\"crsClass\":\"L.CRS.EPSG3857\",\"code\":null,\"proj4def\":null,\"projectedBounds\":null,\"options\":{}}},\"calls\":[{\"method\":\"addTiles\",\"args\":[\"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png\",null,null,{\"minZoom\":0,\"maxZoom\":18,\"tileSize\":256,\"subdomains\":\"abc\",\"errorTileUrl\":\"\",\"tms\":false,\"noWrap\":false,\"zoomOffset\":0,\"zoomReverse\":false,\"opacity\":1,\"zIndex\":1,\"detectRetina\":false,\"attribution\":\"&copy; <a href=\\\"https://openstreetmap.org/copyright/\\\">OpenStreetMap<\\/a>,  <a href=\\\"https://opendatacommons.org/licenses/odbl/\\\">ODbL<\\/a>\"}]},{\"method\":\"addCircleMarkers\",\"args\":[[47.21958576233184,47.23324962562049],[-1.548491634383669,-1.566505662916901],8,null,null,{\"interactive\":true,\"className\":\"\",\"stroke\":true,\"color\":[\"red\",\"blue\"],\"weight\":5,\"opacity\":0.5,\"fill\":true,\"fillColor\":[\"red\",\"blue\"],\"fillOpacity\":0.2},null,null,[\"<b><a href='https://www.instagram.com/les_forgeurs_daventures_jdr/' target='_blank'>Les forgeurs d'aventures<\\/a><\\/b><br><img src='https://github.com/fmarchais/carte_du_jdr.github.io/blob/main/logos/forgeurs_logo.jpg' width='200' height='150'>\",\"<b><a href='https://www.facebook.com/LesAlienesdeCthulhu/' target='_blank'>Les alienes de Cthulu<\\/a><\\/b><br><img src='https://github.com/fmarchais/carte_du_jdr.github.io/blob/main/logos/alienes_logo.jpg' width='200' height='150'>\"],null,[\"Les forgeurs d'aventures, Tous les jeudis a 20h30\",\"Les alienes de Cthulu, Association\"],{\"interactive\":false,\"permanent\":false,\"direction\":\"auto\",\"opacity\":1,\"offset\":[0,0],\"textsize\":\"10px\",\"textOnly\":false,\"className\":\"\",\"sticky\":true},null]},{\"method\":\"addLegend\",\"args\":[{\"colors\":[\"red\",\"darkgreen\",\"blue\"],\"labels\":[\"Evènements réguliers\",\"Evènements exceptionnels\",\"Associations\"],\"na_color\":null,\"na_label\":\"NA\",\"opacity\":0.5,\"position\":\"bottomright\",\"type\":\"unknown\",\"title\":\"Légende\",\"extra\":null,\"layerId\":null,\"className\":\"info legend\",\"group\":null}]}],\"setView\":[[47.2184,-1.5536],13,[]],\"limits\":{\"lat\":[47.21958576233184,47.23324962562049],\"lng\":[-1.566505662916901,-1.548491634383669]}},\"evals\":[],\"jsHooks\":[]}</script>\n```\n\n:::\n:::\n\n\n\n\\`\\`\\`\\`\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"site_libs/htmltools-fill-0.5.8.1/fill.css\" rel=\"stylesheet\" />\n<script src=\"site_libs/htmlwidgets-1.6.4/htmlwidgets.js\"></script>\n<script src=\"site_libs/jquery-3.6.0/jquery-3.6.0.min.js\"></script>\n<link href=\"site_libs/leaflet-1.3.1/leaflet.css\" rel=\"stylesheet\" />\n<script src=\"site_libs/leaflet-1.3.1/leaflet.js\"></script>\n<link href=\"site_libs/leafletfix-1.0.0/leafletfix.css\" rel=\"stylesheet\" />\n<script src=\"site_libs/proj4-2.6.2/proj4.min.js\"></script>\n<script src=\"site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js\"></script>\n<link href=\"site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css\" rel=\"stylesheet\" />\n<script src=\"site_libs/leaflet-binding-2.2.2/leaflet.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
