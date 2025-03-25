@@ -7,7 +7,6 @@ format: html
 
 ```{r setup, include=FALSE}
 library(leaflet)
-library(dplyr)
 library(tidyverse)
 ```
 
