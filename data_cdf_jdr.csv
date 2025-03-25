@@ -1,3 +1,3 @@
 lat;lon;id;nom;freq;type;lien;image
-47.21958576233184;-1.5484916343836694;forgeurs;Les forgeurs d'aventures;Tous les jeudis a 20h30;Recurrent;https://www.instagram.com/les_forgeurs_daventures_jdr/;https://github.com/fmarchais/carte_du_jdr/blob/main/logos/logo_forgeurs.png
-47.23324962562049;-1.5665056629169005;alienes;Les alienes de Cthulu;Association;Association;https://www.facebook.com/LesAlienesdeCthulhu/;https://github.com/fmarchais/carte_du_jdr/blob/main/logos/ali%C3%A9n%C3%A9s.jpg
+47.21958576233184;-1.5484916343836694;forgeurs;Les forgeurs d'aventures;Tous les jeudis a 20h30;Recurrent;https://www.instagram.com/les_forgeurs_daventures_jdr/;logos/logo_forgeurs.jpg
+47.23324962562049;-1.5665056629169005;alienes;Les alienes de Cthulu;Association;Association;https://www.facebook.com/LesAlienesdeCthulhu/;logos/logos_alienes.jpg
