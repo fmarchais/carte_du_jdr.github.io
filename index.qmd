@@ -7,13 +7,12 @@ format: html
 
 ```{r setup, include=FALSE}
 library(leaflet)
-library(dplyr)
 library(tidyverse)
 ```
 
 # Carte de France du JDR
 
-```{r leaflet-map, echo=FALSE}
+```{r leaflet-map, echo=FALSE, comment=FALSE, message = FALSE}
 # Centrer la carte sur Nantes
 nantes_coords <- c(47.2184, -1.5536)
 
