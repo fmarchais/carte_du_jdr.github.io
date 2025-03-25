@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+lat;lon;id;nom;freq;type;lien;image
+47.21958576233184;-1.5484916343836694;forgeurs;Les forgeurs d'aventures;Tous les jeudis a 20h30;Recurrent;https://www.instagram.com/les_forgeurs_daventures_jdr/;logos/logo_forgeurs.jpg
+47.23324962562049;-1.5665056629169005;alienes;Les alienes de Cthulu;Association;Association;https://www.facebook.com/LesAlienesdeCthulhu/;logos/logos_alienes.jpg
+=======
 id;nom;lat;lon;freq;type;lien;image
 forgeurs;Les forgeurs d'aventures;47.21958576233184;-1.5484916343836694;Tous les jeudis a 20h30;Recurrent;https://www.instagram.com/les_forgeurs_daventures_jdr/;https://github.com/fmarchais/carte_du_jdr.github.io/blob/main/logos/forgeurs_logo.jpg
 alienes;Les alienes de Cthulu;47.23324962562049;-1.5665056629169005;Association;Association;https://www.facebook.com/LesAlienesdeCthulhu/;https://github.com/fmarchais/carte_du_jdr.github.io/blob/main/logos/alienes_logo.jpg
+>>>>>>> 524b41d2a5d2129455943d7f1afd1e3827779420
