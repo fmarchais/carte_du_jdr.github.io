@@ -1,5 +1,5 @@
 ---
-title: "Leaflet Map of Nantes"
+title: "Carte de l'Ouest du JDR"
 author: "fmarchais"
 date: "2025-03-25"
 format: html
@@ -10,7 +10,6 @@ library(leaflet)
 library(tidyverse)
 ```
 
-# Carte de France du JDR
 
 ```{r leaflet-map, echo=FALSE, comment=FALSE, message = FALSE}
 # Centrer la carte sur Nantes
@@ -27,7 +26,8 @@ df <- df %>%
   mutate(color = case_when(
     type == "Recurrent" ~ "red",
     type == "Exceptionnel" ~ "darkgreen",
-    type == "Association" ~ "blue"
+    type == "Association" ~ "blue",
+    type == "Boutique" ~ "yellow"
   ),
   lon = as.numeric(lon),
   lat = as.numeric(lat))
@@ -36,19 +36,25 @@ df <- df %>%
 # Crééer la carte
 leaflet(df) %>%
   addTiles() %>%
-  setView(lng = nantes_coords[2], lat = nantes_coords[1], zoom = 13) %>%
+  setView(lng = nantes_coords[2], lat = nantes_coords[1], zoom = 10) %>%
   # Ajouter les marqueurs
   addCircleMarkers(~lon, ~lat, 
                    color = ~color, radius = 8, 
                    label = ~ paste0(nom, ", ", freq),
-                   popup = ~ paste0("<b>","<a href='", 
-                                   lien, "' target='_blank'>", nom, "</a>" ,
-                                    "</b><br><img src='", image, "' width='200' height='150'>")) %>%
+                   popup = ~ paste0(nom, "<br>",
+                                    "<a href='",lien, "' target='_blank'>", groupe, "</a><br>",
+                                    entree, "<br>",
+                                    freq, "<br>",
+                                    "<img src='", image, "' width='200' height='150'>")) %>%
+  
   # Ajouter la légende
   addLegend(position = "bottomright", 
-            colors = c("red", "darkgreen", "blue"),
-            labels = c("Evènements réguliers", "Evènements exceptionnels", "Associations"),
+            colors = c("red", "darkgreen", "blue", "yellow"),
+            labels = c("Evènements réguliers", "Evènements exceptionnels", "Associations","Boutiques"),
             title = "Légende")
+
+
+
 ```
 
 \`\`\`\`

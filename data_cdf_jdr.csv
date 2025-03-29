@@ -1,4 +1,9 @@
-lat;lon;id;nom;freq;type;lien;image
-47.21958576233184;-1.5484916343836694;forgeurs;Les forgeurs d'aventures;Tous les jeudis a 20h30;Recurrent;https://www.instagram.com/les_forgeurs_daventures_jdr/;logos/logo_forgeurs.jpg
-47.23324962562049;-1.5665056629169005;alienes;Les alienes de Cthulu;Association;Association;https://www.facebook.com/LesAlienesdeCthulhu/;logos/logos_alienes.jpg
-
+lat;lon;id;nom;groupe;freq;type;entree;lien;image
+47.21958576233184;-1.5484916343836694;la_forge;La Forge;Les forgeurs d'aventures;Tous les jeudis a 20h30;Recurrent;Gratuit, sur inscription;https://www.instagram.com/les_forgeurs_daventures_jdr/;https://raw.githubusercontent.com/fmarchais/carte_du_jdr.github.io/main/logos/forgeurs_logo.jpg
+47.23324962562049;-1.5665056629169005;alienes;Les alienes de Cthulu;Les alienes de Cthulu;Association;Association; ;https://www.facebook.com/LesAlienesdeCthulhu/;https://raw.githubusercontent.com/fmarchais/carte_du_jdr.github.io/main/logos/alienes_logo.jpg
+47.21276531754717;-1.5555835277615728;taverne_aventuriers;La Taverne des Aventuriers;Les forgeurs d'aventures;Deux fois par mois;Recurrent;Gratuit, sur inscription;https://www.latavernedesaventuriers.fr/;https://raw.githubusercontent.com/fmarchais/carte_du_jdr.github.io/main/logos/taverne_aventuriers.jpg
+47.259986843423924;-1.5313598351120996;art_to_play;Art To Play;Art To Play;En novembre;Exceptionnel;Entree payante;https://art-to-play.fr/;
+47.22403092141348; -1.5642887060225017;wyvern_journey;Wyvern Journey;Wyvern Journey;A la demande;Boutique;Seance payante;https://wyvern-journey.fr/;
+47.320583004653784; -1.3813748861316697;tete_haute;Tete Haute;Les mondes d'Eferia;;Recurrent; ;https://www.tete-haute.fr/;
+47.21323267748804;-1.5536000672382078;fabrik_a_jeux;La Fabrik a jeux;La Fabrik a jeux;Une fois par mois;Recurrent;Sur inscription;;
+47.01413448378762;-1.5626524525913266;mondes_eferia;Les mondes d'Eferia;Les mondes d'Eferia;En ligne, sur evenements;Association;Gratuit, sur inscription;https://lesmondesdeferia.fr/jeu-de-role/;
