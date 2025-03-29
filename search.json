@@ -2,15 +2,8 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Leaflet Map of Nantes",
+    "title": "Carte de l’Ouest du JDR",
     "section": "",
-    "text": "Carte de France du JDR\n\n\nℹ Using \"','\" as decimal and \"'.'\" as grouping mark. Use `read_delim()` for more control.\n\n\n\n\n\n\n````"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "````"
   }
 ]
